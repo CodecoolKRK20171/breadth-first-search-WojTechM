@@ -57,4 +57,14 @@ public class UserNode {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
+
+    @Override
+    public String toString() {
+        return "UserNode{" +
+                "id=" + id +
+                ", firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", friends=" + friends.size() +
+                '}';
+    }
 }
